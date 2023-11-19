@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#2B2849">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/sample_layout_background">
+
+        <LinearLayout
+            android:id="@+id/left_view"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/pdf_sample_layout"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pdf_color_icon"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@+id/left_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/icon"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.04"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/_2sdp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Mathematics-3 suggestion"
+                android:textColor="#CCFFFFFF"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_below="@+id/details"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/dateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_9ssp"
+                    android:fontFamily="@font/light"
+                    android:text="19-05-2023"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="#DCD4D4" />
+                <ImageButton
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_star_border_24"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

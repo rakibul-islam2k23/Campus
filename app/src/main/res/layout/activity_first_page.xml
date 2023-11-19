@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2849"
+    tools:context=".FirstPageActivity">
+
+
+    <android.widget.Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/class_time_addtask_background"
+        android:text="Get Started "
+        android:textColor="#CCFFFFFF"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="@dimen/_10sdp"
+        android:letterSpacing="0.07"
+        android:padding="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        />
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/getStartedButton"
+        >
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campus"
+            android:textColor="#EDFFFFFF"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bold"
+            android:letterSpacing="0.09"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            />
+        <TextView
+            android:layout_below="@id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New way to communication that help you to collect senior advise , customize class , assignment , exam routine also you can buy old books and etc..."
+            android:textColor="#CCFFFFFF"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/medium"
+            android:letterSpacing="0.07"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            />
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_above="@+id/name"
+        app:lottie_rawRes="@raw/class_room"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        />
+
+
+
+</RelativeLayout>

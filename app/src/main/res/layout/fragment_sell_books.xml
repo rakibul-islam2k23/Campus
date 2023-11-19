@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2B2849"
+    tools:context=".SellBooksFragment">
+
+    <RelativeLayout
+        android:id="@+id/addTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/todayTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:letterSpacing="0.04"
+                android:padding="@dimen/_4sdp"
+                android:text="16 September"
+                android:textAlignment="center"
+                android:textColor="#8F8888"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/bold"
+                android:letterSpacing="0.04"
+                android:padding="@dimen/_3sdp"
+                android:text="Explore More"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listBookLayout"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/class_time_addtask_background"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_5sdp"
+
+            >
+            <ImageButton
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_add_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:padding="@dimen/_3sdp"
+                android:text="List Book"
+                android:textColor="#2B2849"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/clearBookList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Clear"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/addTask"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearBookList">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/subjectSetion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="1st Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="1st Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/oneBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849">
+
+                        </AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/one"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="2nd Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="2nd Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/twoBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849"></AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="3rd Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="3rd Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/threeBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849"></AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/three"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="4th Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="4th Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/fourBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849"></AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/four"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="5th Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="5th Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/fiveBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849"></AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/five"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="6th Book"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="6th Book"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sixBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849"></AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/allBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/six"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Total Books"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="Total Books"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="Physics -2 (25922)"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/totalBookACTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849">
+
+                        </AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/problemSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subjectSetion">
+
+                <LinearLayout
+                    android:id="@+id/semisterOfSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:letterSpacing="0.04"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Semister"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold" />
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buy_books_layout_background"
+                        android:hint="Semister"
+                        android:textColorHint="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:endIconTint="@color/white"
+                        app:placeholderText="1"
+                        app:placeholderTextColor="#9AFFFFFF">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/semisterAUTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/medium"
+                            android:inputType="none"
+                            android:textColor="@color/white"
+                            android:textColorHint="#2B2849">
+
+                        </AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/problemTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_below="@id/semisterOfSell"
+                    android:fontFamily="@font/bold"
+                    android:letterSpacing="0.08"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Problem"
+                    android:textColor="#FF0000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/problemEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_below="@+id/problemTextView"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/buy_books_layout_background"
+                    android:fontFamily="@font/medium"
+                    android:gravity="top"
+                    android:hint="Mention books problem ?"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:maxLines="4"
+                    android:padding="@dimen/_10sdp"
+                    android:scrollIndicators="top"
+                    android:textColor="#E6FFFFFF"
+                    android:textColorHint="#ADFFFFFF"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/problemEditText"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/buy_books_layout_background"
+                    android:fontFamily="@font/medium"
+                    android:gravity="top"
+                    android:hint="Price ?"
+                    android:letterSpacing="0.05"
+                    android:inputType="number"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:maxLines="1"
+                    android:padding="@dimen/_10sdp"
+                    android:scrollIndicators="top"
+                    android:textColor="#FF0000"
+                    android:textColorHint="#ADFFFFFF"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+

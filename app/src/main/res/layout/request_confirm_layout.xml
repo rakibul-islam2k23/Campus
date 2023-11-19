@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:padding="@dimen/_10sdp"
+        >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send a request to buy books | We will call you within 1 hour "
+            android:textColor="@color/black"
+            android:fontFamily="@font/light"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"
+            android:letterSpacing="0.05"
+            />
+        <EditText
+            android:id="@+id/buyerPrice"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11000000"
+            android:textColorHint="#7E7676"
+            android:textStyle="normal"
+            android:fontFamily="@font/medium"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:inputType="number"
+            android:hint="Your Amount ?"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            >
+
+            <TextView
+                android:id="@+id/dialogClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="#BC2B2849"
+                android:textSize="@dimen/_12sdp"
+                android:layout_toLeftOf="@+id/ok"
+                android:layout_marginEnd="@dimen/_25sdp"
+                />
+            <TextView
+                android:id="@+id/dialogOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:textColor="#2B2849"
+                android:textStyle="bold"
+                android:fontFamily="@font/medium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

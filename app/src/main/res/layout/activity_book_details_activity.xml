@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2849"
+    tools:context=".BookDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/toolBarOfBuy"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/backImageButton"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                />
+            <TextView
+                android:id="@+id/backTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Back"
+                android:textColor="#D0E3D9D9"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_11ssp"
+                android:fontFamily="@font/medium"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:text="Buy Books"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_below="@id/toolBarOfBuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/oneBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_below="@id/one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/twoBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_below="@id/two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/threeBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/four"
+        android:layout_below="@id/three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/fourBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/five"
+        android:layout_below="@id/four"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/fiveBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/six"
+        android:layout_below="@id/five"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/sixBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B2FFFFFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:letterSpacing="0.06"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/problemTextView"
+        android:layout_below="@id/six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Problem"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:fontFamily="@font/bold"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/problemTextView"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/buy_books_layout_background"
+        android:fontFamily="@font/medium"
+        android:letterSpacing="0.05"
+        android:lineSpacingExtra="@dimen/_3sdp"
+        android:maxLines="4"
+        android:padding="@dimen/_10sdp"
+        android:text="amr boi gula ta kichu problem acha .mana kichu page bitor a nai.tachara amr boi gula ta senior bai dar dhara kichu dagano acha.amr boi gula ta kichu problem acha ."
+        android:textColor="#E6FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        >
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/love"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/buy_books_layout_background"
+            />
+        <TextView
+            android:id="@+id/placeRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2B2849"
+            android:text="Place a Request"
+            android:background="@drawable/class_time_addtask_background"
+            android:fontFamily="@font/medium"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
